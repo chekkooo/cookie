@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin:0; padding:0; box-sizing:border-box;}
+li { list-style:none; }
+a { text-decoration:none;
+    color:#333}
+a:hover {color:#333}
+body {
+    background-color: rgb(255, 252, 246);
+    font-family: 'S-CoreDream-3Light';;
+}
+.bg-color {
+    background-color: rgb(255, 252, 246);
+}
+
+
+header { 
+    font-family:'UhBeeSe_hyun' ;
+    padding:70px 0 10px; 
+}
+header .cookiebar {
+    position: absolute;
+    top:-10px;
+    right:-5px;
+    width:60px;
+}
+.navbar-toggler:focus {
+    box-shadow: none; }
+#banner {
+    margin-top: 10px;
+    background:url('../img/strawberry.jpg') no-repeat center 60%/cover;
+    height:50vh;
+}
+.logo_ch {
+    width:30px
+}
+
+
+.navbar-toggler-icon {
+    color:rgb(22, 255, 255)
+}
+.nav-link {
+    color:#333
+}
+.nav-link:hover {
+    color:#ff0606;
+}
+
+section { padding:70px 0;}
+section img { max-width:60%; }
+section h1 { 
+    font-family: 'UhBeeSe_hyun';
+    font-size:45px; 
+    line-height:1.4; 
+}
+section h2 { 
+    font-family: 'UhBeeSe_hyun';
+    font-size:40px; 
+    line-height:1.4; 
+    margin-bottom:60px;
+}
+section p { font-size:14px; line-height:1.4; color:#333}
+section p .bi { color:#0d6efd; padding-right:10px; }
+section p.mt { margin-top:80px; }
+
+#season {
+    background-color: #fff2f1;
+}
+#season #d_top {
+    position: relative;
+}
+#season #d_top .strBerry img {
+    position: absolute;
+}
+#season #d_top .strBerry img:nth-child(1) {
+    top:0;
+    left:40px;
+    transform: rotate(260deg);
+}
+#season #d_top .strBerry img:nth-child(2) {
+   bottom:0px;
+    right:50px;
+    width:100px;
+
+}
+
+#season #info {
+    position: relative;
+}
+#season h2 {
+    color:#6fa4ff;
+    margin-bottom:20px;
+
+    
+}
+#season h2 span {
+    color:#3d5dff
+}
+#season h1 {
+    color:#ff1313
+}
+#season h2 img {
+    position: absolute;
+    width:50px;
+ }
+#season h2 img.snow01 {
+   top:-22px;
+   left:210px;
+   width:30px;
+}
+
+
+
+#c_zero h2 { 
+    font-size:2.5vw; 
+    padding-top:30px; 
+    color:#ff0606
+    }
+#c_zero h4 { 
+    font-size:20px; 
+    color:#767676;
+   }
+
+section#cookies {
+    background-color: #ffdbd3;
+}
+section#cookies {
+    color:#43311e
+}
+section#cookies strong {
+    color:#ff2020
+}
+
+
+section#c_one {
+    background-color: #fff8e4;
+}
+section#c_one h2 {
+    color:#613a11
+}
+section#c_one h2 strong {
+    color:#ff1988
+}
+
+
+section#c_two {
+    background-color: #f2ebff;
+}
+section#c_two h2 strong {
+    color:#9d3cff
+}
+#info_text {
+    margin: auto;
+}
+section#c_three h2  {
+    color:#ffdd1a;
+}
+section#c_three p  {
+    color:#006F72
+}
+section#c_three {
+    background-color: #fff;
+}
+section#c_four h2 strong {
+    color:#ff4141
+}
+
+#app a {
+    width: 100%;
+}
+#app div {
+    margin:auto;
+    padding:20px 0;
+}
+#app img { 
+    width:100%; 
+}
+#app h2 {
+    color:#ff5f09
+}   
+
+#footer {
+    color:#613a11
+}
+#footer button {
+    margin-bottom: 30px;
+}
+
+#location{ 
+    background-color: #F3E8DA;
+}
+.location {
+    background:url('../img/location.png') no-repeat center 60%/cover;
+    height:60vh;
+}
+#location p span {
+    color:#ff0606;
+}
+#location p:last-child {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* 1200px 이상*/
+@media ( min-width:1200px) {
+    header { padding:90px 0 0px; }
+    header h2 { font-size:4.5vw }
+    header h4 { font-size:25px; }
+
+    section img { max-width:70%; }
+    #c_two img {max-width: 40%;}
+    #app img { 
+        width:100%; 
+    }
+}
+
+/* 1200px 이하*/
+@media ( max-width:1200px) {
+    section img { max-width:80%; }
+    #c_two img { max-width: 40%;}
+    .strBerry {display: none;}
+    #app img { 
+        width:100%; 
+    }
+}
+
+
+/* 767px 이하*/
+@media ( max-width:767px) {
+    header {padding:50px 0 0; }
+    header h2 { font-size:50px }
+    header h4 { font-size:18px; }
+    header button { transform: scale(0.7);}
+    header p { font-size:14px;}
+
+    section { padding:40px 0; }
+    section h2 { font-size:32px; margin-bottom:30px;}
+    section p { font-size:12px; }
+    section p.mt { margin-top:40px; }
+
+    #c_zero h2 { 
+        font-size:32px; 
+        padding-top:50px; 
+    }
+    section div#d_top {
+        margin-bottom: 40px;
+    }
+    #c_two img {
+        max-width: 40%;
+    }
+    #app img { 
+        width:100%; 
+    }
+}
